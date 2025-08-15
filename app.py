@@ -1,9 +1,8 @@
-
 import json, os
 import streamlit as st
 
 st.set_page_config(page_title="Catholic Saints Calendar — Minimal", layout="centered")
-st.title("Catholic Saints Calendar — Minimal (August 2025, EN)")
+st.title("Catholic Saints Calendar — August 2025 (English) — Minimal")
 
 CAL_FILE = "data/calendar_2025_en.json"
 MED_FILE = "data/meditations_2025_en.json"
@@ -16,13 +15,20 @@ def load_json(path):
     except FileNotFoundError:
         st.error(f"Required file not found: {path}")
         st.stop()
+    except json.JSONDecodeError as e:
+        st.error(f"JSON parse error in {path}: {e}")
+        st.stop()
 
 calendar = load_json(CAL_FILE)
 meditations = load_json(MED_FILE)
 
 dates = sorted(calendar.keys())
-idx_default = dates.index("2025-08-01") if "2025-08-01" in dates else 0
-chosen = st.selectbox("Select a date", dates, index=idx_default)
+if not dates:
+    st.error("Calendar is empty.")
+    st.stop()
+
+default_date = "2025-08-01" if "2025-08-01" in dates else dates[0]
+chosen = st.selectbox("Select a date", dates, index=dates.index(default_date))
 
 st.subheader(chosen)
 st.write(f"**Saint/Feast:** {calendar.get(chosen, '—')}")
