@@ -1,15 +1,10 @@
-# Catholic Saints Calendar (Minimal Phase 2.2)
-
-This is a working version of the Catholic Saints Calendar app.
-
-## Features
-- Saints, feasts, and liturgical colors (August & September 2025)
-- Separate **history** and **reflection**
-- Personal notes saved locally
-- Ready for Streamlit deployment
+# Catholic Saints Calendar — Phase 2.3
+- Search bar + dropdown filters (Feast Type, Liturgical Color)
+- Fixed Date dropdown (shows all dates available in selected month)
+- Month switcher derived from data
+- Separate History & Meditation
+- Local notes per-day in `notes/`
 
 ## Run locally
-```bash
-pip install streamlit
+pip install -r requirements.txt
 streamlit run app.py
-```
