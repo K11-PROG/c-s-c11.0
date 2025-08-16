@@ -1,1 +1,1 @@
-placeholder so notes/ is versioned
+Notes will be stored here.

@@ -1,19 +1,16 @@
-# Minimal Catholic Saints Calendar — August 2025 (English) with Liturgical Colors
+# Catholic Saints Calendar (Minimal Version)
 
-This repo is ready for GitHub → Streamlit deployment.
+This is a minimal working version of the Catholic Saints Calendar app for deployment on Streamlit.
 
-## Local run
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
+## Features
+- August + September 2025 included (English only)
+- Real saints and feasts from the General Roman Calendar
+- Blended devotional + historical meditations
+- Liturgical colors included
+- Notes folder with placeholder
 
-## Deploy to Streamlit Cloud
-- Push ALL files preserving structure:
-  - app.py
-  - data/calendar_2025_en.json
-  - data/meditations_2025_en.json
-  - notes/placeholder.txt
-  - requirements.txt
-  - README.md
-- Set main file to `app.py` when deploying.
+## Deployment
+1. Upload this project to GitHub.
+2. Connect the repo to [Streamlit Cloud](https://share.streamlit.io).
+3. Deploy and enjoy.
+

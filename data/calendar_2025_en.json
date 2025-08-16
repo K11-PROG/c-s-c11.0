@@ -1,126 +1,62 @@
 {
   "2025-08-01": {
-    "title": "St. Alphonsus Liguori",
-    "color": "white"
-  },
-  "2025-08-02": {
-    "title": "St. Eusebius of Vercelli; St. Peter Julian Eymard",
-    "color": "white"
-  },
-  "2025-08-03": {
-    "title": "18th Sunday in Ordinary Time",
-    "color": "green"
-  },
-  "2025-08-04": {
-    "title": "St. John Vianney",
-    "color": "white"
-  },
-  "2025-08-05": {
-    "title": "Dedication of the Basilica of St. Mary Major",
-    "color": "white"
+    "name": "St. Alphonsus Liguori",
+    "type": "Memorial",
+    "color": "White"
   },
   "2025-08-06": {
-    "title": "Transfiguration of the Lord",
-    "color": "white"
-  },
-  "2025-08-07": {
-    "title": "St. Sixtus II and Companions; St. Cajetan",
-    "color": "red"
-  },
-  "2025-08-08": {
-    "title": "St. Dominic",
-    "color": "white"
-  },
-  "2025-08-09": {
-    "title": "St. Teresa Benedicta of the Cross (Edith Stein)",
-    "color": "red"
+    "name": "Transfiguration of the Lord",
+    "type": "Feast",
+    "color": "White"
   },
   "2025-08-10": {
-    "title": "St. Lawrence",
-    "color": "red"
-  },
-  "2025-08-11": {
-    "title": "St. Clare",
-    "color": "white"
-  },
-  "2025-08-12": {
-    "title": "St. Jane Frances de Chantal",
-    "color": "white"
-  },
-  "2025-08-13": {
-    "title": "Sts. Pontian and Hippolytus",
-    "color": "red"
-  },
-  "2025-08-14": {
-    "title": "St. Maximilian Kolbe",
-    "color": "red"
+    "name": "St. Lawrence, Deacon and Martyr",
+    "type": "Feast",
+    "color": "Red"
   },
   "2025-08-15": {
-    "title": "Assumption of the Blessed Virgin Mary",
-    "color": "white"
-  },
-  "2025-08-16": {
-    "title": "St. Stephen of Hungary",
-    "color": "white"
-  },
-  "2025-08-17": {
-    "title": "20th Sunday in Ordinary Time",
-    "color": "green"
-  },
-  "2025-08-18": {
-    "title": "Weekday in Ordinary Time",
-    "color": "green"
-  },
-  "2025-08-19": {
-    "title": "St. John Eudes",
-    "color": "white"
+    "name": "Assumption of the Blessed Virgin Mary",
+    "type": "Solemnity",
+    "color": "White"
   },
   "2025-08-20": {
-    "title": "St. Bernard of Clairvaux",
-    "color": "white"
-  },
-  "2025-08-21": {
-    "title": "St. Pius X",
-    "color": "white"
+    "name": "St. Bernard of Clairvaux",
+    "type": "Memorial",
+    "color": "White"
   },
   "2025-08-22": {
-    "title": "Queenship of the Blessed Virgin Mary",
-    "color": "white"
-  },
-  "2025-08-23": {
-    "title": "St. Rose of Lima",
-    "color": "white"
+    "name": "Queenship of the Blessed Virgin Mary",
+    "type": "Memorial",
+    "color": "White"
   },
   "2025-08-24": {
-    "title": "St. Bartholomew, Apostle",
-    "color": "red"
+    "name": "St. Bartholomew, Apostle",
+    "type": "Feast",
+    "color": "Red"
   },
-  "2025-08-25": {
-    "title": "St. Louis; St. Joseph Calasanz",
-    "color": "white"
+  "2025-09-08": {
+    "name": "Nativity of the Blessed Virgin Mary",
+    "type": "Feast",
+    "color": "White"
   },
-  "2025-08-26": {
-    "title": "Weekday in Ordinary Time",
-    "color": "green"
+  "2025-09-14": {
+    "name": "Exaltation of the Holy Cross",
+    "type": "Feast",
+    "color": "Red"
   },
-  "2025-08-27": {
-    "title": "St. Monica",
-    "color": "white"
+  "2025-09-15": {
+    "name": "Our Lady of Sorrows",
+    "type": "Memorial",
+    "color": "White"
   },
-  "2025-08-28": {
-    "title": "St. Augustine",
-    "color": "white"
+  "2025-09-21": {
+    "name": "St. Matthew, Apostle and Evangelist",
+    "type": "Feast",
+    "color": "Red"
   },
-  "2025-08-29": {
-    "title": "Passion of St. John the Baptist",
-    "color": "red"
-  },
-  "2025-08-30": {
-    "title": "Weekday in Ordinary Time",
-    "color": "green"
-  },
-  "2025-08-31": {
-    "title": "22nd Sunday in Ordinary Time",
-    "color": "green"
+  "2025-09-29": {
+    "name": "Saints Michael, Gabriel and Raphael, Archangels",
+    "type": "Feast",
+    "color": "White"
   }
 }
