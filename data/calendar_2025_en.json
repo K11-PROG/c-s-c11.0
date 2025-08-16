@@ -1,62 +1,84 @@
 {
   "2025-08-01": {
-    "name": "St. Alphonsus Liguori",
-    "type": "Memorial",
+    "feast": "St. Alphonsus Liguori, Bishop and Doctor",
+    "saints": [
+      "St. Alphonsus Liguori"
+    ],
+    "color": "White"
+  },
+  "2025-08-04": {
+    "feast": "St. John Vianney, Priest",
+    "saints": [
+      "St. John Vianney"
+    ],
     "color": "White"
   },
   "2025-08-06": {
-    "name": "Transfiguration of the Lord",
-    "type": "Feast",
+    "feast": "Transfiguration of the Lord",
+    "saints": [],
     "color": "White"
   },
-  "2025-08-10": {
-    "name": "St. Lawrence, Deacon and Martyr",
-    "type": "Feast",
-    "color": "Red"
-  },
   "2025-08-15": {
-    "name": "Assumption of the Blessed Virgin Mary",
-    "type": "Solemnity",
+    "feast": "Assumption of the Blessed Virgin Mary",
+    "saints": [
+      "Mary, Mother of God"
+    ],
     "color": "White"
   },
   "2025-08-20": {
-    "name": "St. Bernard of Clairvaux",
-    "type": "Memorial",
-    "color": "White"
-  },
-  "2025-08-22": {
-    "name": "Queenship of the Blessed Virgin Mary",
-    "type": "Memorial",
+    "feast": "St. Bernard, Abbot and Doctor",
+    "saints": [
+      "St. Bernard of Clairvaux"
+    ],
     "color": "White"
   },
   "2025-08-24": {
-    "name": "St. Bartholomew, Apostle",
-    "type": "Feast",
+    "feast": "St. Bartholomew, Apostle",
+    "saints": [
+      "St. Bartholomew"
+    ],
     "color": "Red"
   },
+  "2025-08-28": {
+    "feast": "St. Augustine, Bishop and Doctor",
+    "saints": [
+      "St. Augustine"
+    ],
+    "color": "White"
+  },
+  "2025-09-03": {
+    "feast": "St. Gregory the Great, Pope and Doctor",
+    "saints": [
+      "St. Gregory the Great"
+    ],
+    "color": "White"
+  },
   "2025-09-08": {
-    "name": "Nativity of the Blessed Virgin Mary",
-    "type": "Feast",
+    "feast": "Nativity of the Blessed Virgin Mary",
+    "saints": [
+      "Mary, Mother of God"
+    ],
     "color": "White"
   },
   "2025-09-14": {
-    "name": "Exaltation of the Holy Cross",
-    "type": "Feast",
+    "feast": "Exaltation of the Holy Cross",
+    "saints": [],
     "color": "Red"
   },
-  "2025-09-15": {
-    "name": "Our Lady of Sorrows",
-    "type": "Memorial",
-    "color": "White"
-  },
   "2025-09-21": {
-    "name": "St. Matthew, Apostle and Evangelist",
-    "type": "Feast",
+    "feast": "St. Matthew, Apostle and Evangelist",
+    "saints": [
+      "St. Matthew"
+    ],
     "color": "Red"
   },
   "2025-09-29": {
-    "name": "Saints Michael, Gabriel and Raphael, Archangels",
-    "type": "Feast",
+    "feast": "Sts. Michael, Gabriel and Raphael, Archangels",
+    "saints": [
+      "St. Michael",
+      "St. Gabriel",
+      "St. Raphael"
+    ],
     "color": "White"
   }
 }

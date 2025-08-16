@@ -1,14 +1,22 @@
 {
-  "2025-08-01": "St. Alphonsus Liguori (1696\u20131787) founded the Redemptorists and dedicated his life to preaching missions. His deep devotion to the Blessed Virgin Mary and the Eucharist continues to inspire. Reflection: May we learn from his zeal to bring Christ\u2019s mercy to all.",
-  "2025-08-06": "The Transfiguration reveals Christ\u2019s divine glory to Peter, James, and John. Historically celebrated in the East since the 4th century, it strengthens faith in Christ\u2019s divinity. Reflection: May we also listen to the voice of the Father: 'This is my beloved Son; listen to Him.'",
-  "2025-08-10": "St. Lawrence, a Roman deacon martyred in 258, is remembered for his courage and charity, especially for presenting the poor as the Church\u2019s true treasure. Reflection: May we value spiritual riches above worldly possessions.",
-  "2025-08-15": "The Assumption of Mary, defined as dogma in 1950, proclaims her being taken body and soul into heaven. Devotionally, it is a sign of hope for all Christians. Reflection: Mary\u2019s glorification points us toward our own eternal destiny in Christ.",
-  "2025-08-20": "St. Bernard of Clairvaux (1090\u20131153), a Cistercian abbot, renewed monastic life and guided the Church with wisdom. Reflection: His love for Mary and Christ reminds us to root our spirituality in humility and devotion.",
-  "2025-08-22": "The Queenship of Mary affirms her role beside Christ the King. Instituted by Pope Pius XII in 1954, it highlights her intercession for the Church. Reflection: Let us entrust ourselves to her motherly protection.",
-  "2025-08-24": "St. Bartholomew, one of the Twelve Apostles, preached the Gospel to distant lands. Tradition holds he was martyred for the faith. Reflection: May we witness to Christ courageously in our own lives.",
-  "2025-09-08": "The Nativity of Mary celebrates the dawn of salvation. By her birth, the world rejoices at the coming of the Mother of the Savior. Reflection: As Mary\u2019s birth brought joy, may our lives bring Christ to others.",
-  "2025-09-14": "The Exaltation of the Holy Cross recalls St. Helena\u2019s discovery of the True Cross in 326. Devotionally, it celebrates Christ\u2019s victory over sin and death. Reflection: We glory in the Cross of our Lord Jesus Christ.",
-  "2025-09-15": "Our Lady of Sorrows honors Mary\u2019s sharing in her Son\u2019s suffering. Reflection: Standing at the foot of the Cross, she teaches us compassion and perseverance.",
-  "2025-09-21": "St. Matthew, Apostle and Evangelist, was called from his work as a tax collector to follow Christ. Reflection: His Gospel continues to proclaim the Good News of the Kingdom.",
-  "2025-09-29": "Saints Michael, Gabriel, and Raphael are archangels who serve God\u2019s mission as protectors, messengers, and healers. Reflection: Let us call on their aid in our daily battles of faith."
+  "2025-08-01": {
+    "history": "St. Alphonsus Liguori (1696–1787) was an Italian bishop and founder of the Redemptorists. He was a lawyer before becoming a priest and is known for his writings on moral theology.",
+    "reflection": "Lord, help me to follow St. Alphonsus in seeking holiness not through pride but through humility and service."
+  },
+  "2025-08-04": {
+    "history": "St. John Vianney (1786–1859), known as the Curé of Ars, was a French parish priest renowned for his pastoral care and his devotion to the Sacrament of Reconciliation.",
+    "reflection": "God, grant me the patience and love St. John Vianney showed to sinners, that I too may lead others to You."
+  },
+  "2025-08-15": {
+    "history": "The Assumption of Mary celebrates the belief that the Blessed Virgin was taken body and soul into heavenly glory at the end of her earthly life.",
+    "reflection": "Mary, assumed into heaven, guide my heart toward the things that are eternal."
+  },
+  "2025-09-03": {
+    "history": "St. Gregory the Great (540–604) was pope and Doctor of the Church. He reformed the liturgy, supported missionaries, and is associated with Gregorian chant.",
+    "reflection": "Lord, through St. Gregory’s intercession, may I use my gifts to serve both the Church and the poor."
+  },
+  "2025-09-21": {
+    "history": "St. Matthew was a tax collector called by Jesus to be an Apostle. He is the author of the Gospel of Matthew.",
+    "reflection": "Jesus, like Matthew, I too am called out of my ordinary life to follow You more deeply."
+  }
 }
