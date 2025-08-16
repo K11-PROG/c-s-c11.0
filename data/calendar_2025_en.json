@@ -1,33 +1,126 @@
 {
-  "2025-08-01": "St. Alphonsus Liguori",
-  "2025-08-02": "St. Eusebius of Vercelli; St. Peter Julian Eymard",
-  "2025-08-03": "18th Sunday in Ordinary Time",
-  "2025-08-04": "St. John Vianney",
-  "2025-08-05": "Dedication of the Basilica of St. Mary Major",
-  "2025-08-06": "Transfiguration of the Lord",
-  "2025-08-07": "St. Sixtus II and Companions; St. Cajetan",
-  "2025-08-08": "St. Dominic",
-  "2025-08-09": "St. Teresa Benedicta of the Cross (Edith Stein)",
-  "2025-08-10": "St. Lawrence",
-  "2025-08-11": "St. Clare",
-  "2025-08-12": "St. Jane Frances de Chantal",
-  "2025-08-13": "Sts. Pontian and Hippolytus",
-  "2025-08-14": "St. Maximilian Kolbe",
-  "2025-08-15": "Assumption of the Blessed Virgin Mary",
-  "2025-08-16": "St. Stephen of Hungary",
-  "2025-08-17": "20th Sunday in Ordinary Time",
-  "2025-08-18": "Weekday in Ordinary Time",
-  "2025-08-19": "St. John Eudes",
-  "2025-08-20": "St. Bernard of Clairvaux",
-  "2025-08-21": "St. Pius X",
-  "2025-08-22": "Queenship of the Blessed Virgin Mary",
-  "2025-08-23": "St. Rose of Lima",
-  "2025-08-24": "St. Bartholomew, Apostle",
-  "2025-08-25": "St. Louis; St. Joseph Calasanz",
-  "2025-08-26": "Weekday in Ordinary Time",
-  "2025-08-27": "St. Monica",
-  "2025-08-28": "St. Augustine",
-  "2025-08-29": "Passion of St. John the Baptist",
-  "2025-08-30": "Weekday in Ordinary Time",
-  "2025-08-31": "22nd Sunday in Ordinary Time"
+  "2025-08-01": {
+    "title": "St. Alphonsus Liguori",
+    "color": "white"
+  },
+  "2025-08-02": {
+    "title": "St. Eusebius of Vercelli; St. Peter Julian Eymard",
+    "color": "white"
+  },
+  "2025-08-03": {
+    "title": "18th Sunday in Ordinary Time",
+    "color": "green"
+  },
+  "2025-08-04": {
+    "title": "St. John Vianney",
+    "color": "white"
+  },
+  "2025-08-05": {
+    "title": "Dedication of the Basilica of St. Mary Major",
+    "color": "white"
+  },
+  "2025-08-06": {
+    "title": "Transfiguration of the Lord",
+    "color": "white"
+  },
+  "2025-08-07": {
+    "title": "St. Sixtus II and Companions; St. Cajetan",
+    "color": "red"
+  },
+  "2025-08-08": {
+    "title": "St. Dominic",
+    "color": "white"
+  },
+  "2025-08-09": {
+    "title": "St. Teresa Benedicta of the Cross (Edith Stein)",
+    "color": "red"
+  },
+  "2025-08-10": {
+    "title": "St. Lawrence",
+    "color": "red"
+  },
+  "2025-08-11": {
+    "title": "St. Clare",
+    "color": "white"
+  },
+  "2025-08-12": {
+    "title": "St. Jane Frances de Chantal",
+    "color": "white"
+  },
+  "2025-08-13": {
+    "title": "Sts. Pontian and Hippolytus",
+    "color": "red"
+  },
+  "2025-08-14": {
+    "title": "St. Maximilian Kolbe",
+    "color": "red"
+  },
+  "2025-08-15": {
+    "title": "Assumption of the Blessed Virgin Mary",
+    "color": "white"
+  },
+  "2025-08-16": {
+    "title": "St. Stephen of Hungary",
+    "color": "white"
+  },
+  "2025-08-17": {
+    "title": "20th Sunday in Ordinary Time",
+    "color": "green"
+  },
+  "2025-08-18": {
+    "title": "Weekday in Ordinary Time",
+    "color": "green"
+  },
+  "2025-08-19": {
+    "title": "St. John Eudes",
+    "color": "white"
+  },
+  "2025-08-20": {
+    "title": "St. Bernard of Clairvaux",
+    "color": "white"
+  },
+  "2025-08-21": {
+    "title": "St. Pius X",
+    "color": "white"
+  },
+  "2025-08-22": {
+    "title": "Queenship of the Blessed Virgin Mary",
+    "color": "white"
+  },
+  "2025-08-23": {
+    "title": "St. Rose of Lima",
+    "color": "white"
+  },
+  "2025-08-24": {
+    "title": "St. Bartholomew, Apostle",
+    "color": "red"
+  },
+  "2025-08-25": {
+    "title": "St. Louis; St. Joseph Calasanz",
+    "color": "white"
+  },
+  "2025-08-26": {
+    "title": "Weekday in Ordinary Time",
+    "color": "green"
+  },
+  "2025-08-27": {
+    "title": "St. Monica",
+    "color": "white"
+  },
+  "2025-08-28": {
+    "title": "St. Augustine",
+    "color": "white"
+  },
+  "2025-08-29": {
+    "title": "Passion of St. John the Baptist",
+    "color": "red"
+  },
+  "2025-08-30": {
+    "title": "Weekday in Ordinary Time",
+    "color": "green"
+  },
+  "2025-08-31": {
+    "title": "22nd Sunday in Ordinary Time",
+    "color": "green"
+  }
 }
