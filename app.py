@@ -1,6 +1,6 @@
 import streamlit as st
 import json
-from datetime import date as dt
+import calendar
 
 st.set_page_config(page_title="Catholic Saints Calendar", layout="centered")
 
@@ -14,16 +14,21 @@ meditations_data = load_json("data/meditations_2025_en.json")
 
 def ymd_to_month_label(ymd: str) -> str:
     y, m, _ = ymd.split("-")
-    import calendar as cal
-    return f"{cal.month_name[int(m)]} {y}"
+    return f"{calendar.month_name[int(m)]} {y}"
 
 def sorted_dates(dates):
     return sorted(dates)
 
+def month_sort_key(label: str):
+    parts = label.split()
+    mname = parts[0]
+    year = int(parts[1])
+    month_to_num = {m: i for i, m in enumerate(calendar.month_name) if m}
+    return (year, month_to_num[mname])
+
 all_types = sorted({v.get("type","") for v in calendar_data.values() if v.get("type")})
 all_colors = sorted({v.get("color","") for v in calendar_data.values() if v.get("color")})
-months_present = sorted({ymd_to_month_label(k) for k in calendar_data.keys()},
-                        key=lambda s: (int(s.split()[-1]), __import__("calendar").month_name.index(s.split()[0])))
+months_present = sorted({ymd_to_month_label(k) for k in calendar_data.keys()}, key=month_sort_key)
 
 st.sidebar.header("Filters")
 month_label = st.sidebar.selectbox("Month", options=months_present)
@@ -60,8 +65,8 @@ date_choice = st.sidebar.selectbox("Date", options=sorted_dates(filtered_dates))
 item = calendar_data[date_choice]
 med = meditations_data.get(date_choice, {"history":"No history available.","reflection":"No reflection available."})
 
-st.title("📅 Catholic Saints Calendar 2025 (Phase 2.3)")
-st.caption("Search + filters + month switcher + fixed date dropdown")
+st.title("📅 Catholic Saints Calendar 2025 (Phase 2.3.1)")
+st.caption("Search + filters + month switcher + fixed date dropdown + robust month sort")
 
 st.subheader(f"{date_choice} — {item['feast']}")
 if item.get("saints"):
