@@ -1,85 +1,33 @@
 {
-  "2025-08-01": {
-    "history": "St. Alphonsus (1696–1787), bishop and Doctor of the Church, founded the Redemptorists and wrote influential works on moral theology and devotion to Mary.",
-    "meditation": "Ask the Lord for a merciful heart that holds truth and compassion together, following the spirit of St. Alphonsus."
-  },
-  "2025-08-06": {
-    "history": "Christ revealed His glory on Mount Tabor before Peter, James, and John, strengthening them ahead of His Passion.",
-    "meditation": "Pray to see Christ’s light in daily life, especially when you face darkness or confusion."
-  },
-  "2025-08-10": {
-    "history": "St. Lawrence was a third-century Roman deacon who cared for the poor and was martyred under Valerian.",
-    "meditation": "Offer a concrete act of charity today for someone in need, with a joyful heart."
-  },
-  "2025-08-15": {
-    "history": "The Assumption honors Mary taken body and soul into heaven, a pledge of the resurrection promised to all faithful.",
-    "meditation": "Mary, lead me closer to your Son. Teach me to hope in the glory God prepares for those who love Him."
-  },
-  "2025-08-28": {
-    "history": "St. Augustine (354–430), bishop of Hippo and Doctor of the Church, shaped Western Christianity through works like Confessions and City of God.",
-    "meditation": "Lord, make my heart restless for You alone, as Augustine’s heart found rest in Your truth."
-  },
-
-  "2025-09-08": {
-    "history": "The Church celebrates the birth of Mary, the dawn announcing the coming of Christ.",
-    "meditation": "Give thanks for the hidden beginnings of grace in your life; God prepares His work quietly and faithfully."
-  },
-  "2025-09-14": {
-    "history": "The Exaltation of the Holy Cross venerates the instrument of our salvation and proclaims Christ’s triumph through love.",
-    "meditation": "Embrace a small cross today with patience, uniting it to Christ’s saving love."
-  },
-  "2025-09-21": {
-    "history": "St. Matthew, once a tax collector, was called by Jesus to become an apostle and evangelist.",
-    "meditation": "Ask for a listening heart that hears Christ say, ‘Follow me,’ in your concrete circumstances."
-  },
-  "2025-09-29": {
-    "history": "The Archangels Michael, Gabriel, and Raphael serve God’s plan: defending, announcing, and healing.",
-    "meditation": "Invoke the holy angels for protection, clarity, and healing for yourself and those you love."
-  },
-  "2025-09-30": {
-    "history": "St. Jerome (c. 347–420), priest and Doctor, translated the Bible into Latin (the Vulgate) and championed Scriptural study.",
-    "meditation": "Read and pray with a short Gospel passage today; ask the Spirit to kindle a love for Scripture."
-  },
-
-  "2025-10-01": {
-    "history": "St. Thérèse of the Child Jesus (1873–1897), Doctor of the Church, taught the ‘little way’ of trusting love.",
-    "meditation": "Offer a small hidden sacrifice with love; God sees greatness in littleness."
-  },
-  "2025-10-04": {
-    "history": "St. Francis of Assisi (1181/2–1226) renewed the Church through poverty, simplicity, and love for all creation.",
-    "meditation": "Choose simplicity in one decision today, and praise God for the goodness of His creation."
-  },
-  "2025-10-07": {
-    "history": "Our Lady of the Rosary celebrates Mary’s intercession and the Gospel mysteries contemplated in the Rosary.",
-    "meditation": "Pray one decade of the Rosary, slowly, letting each mystery lead you to Christ."
-  },
-  "2025-10-15": {
-    "history": "St. Teresa of Jesus (1515–1582), Carmelite reformer and Doctor, taught deep prayer and friendship with God.",
-    "meditation": "Take five minutes of quiet, simply placing yourself in God’s loving presence without many words."
-  },
-  "2025-10-18": {
-    "history": "St. Luke, companion of St. Paul, authored the Gospel of Luke and Acts, highlighting God’s mercy for the poor and sinners.",
-    "meditation": "Imitate God’s mercy today: forgive quickly, speak kindly, and seek out the overlooked."
-  },
-
-  "2025-11-01": {
-    "history": "All Saints honors the vast communion of holy men and women, known and unknown, who share God’s glory.",
-    "meditation": "Choose a favorite saint and ask their intercession to live your vocation faithfully."
-  },
-  "2025-11-02": {
-    "history": "All Souls invites prayer for the faithful departed, confident in God’s mercy and purification.",
-    "meditation": "Pray for departed loved ones by name, entrusting them to the Lord’s mercy."
-  },
-  "2025-11-09": {
-    "history": "The Lateran Basilica, cathedral of the Bishop of Rome, symbolizes the unity of the Church.",
-    "meditation": "Pray for the Church’s unity and renew your love for your local parish community."
-  },
-  "2025-11-22": {
-    "history": "St. Cecilia, a Roman martyr, is patroness of sacred music and Christian joy amid trials.",
-    "meditation": "Offer a song of praise or a grateful prayer, even if you’re carrying a hidden cross."
-  },
-  "2025-11-30": {
-    "history": "St. Andrew, the first-called apostle, brought others to Christ, including his brother Peter.",
-    "meditation": "Invite one person closer to Christ today—through an encouragement, an invitation, or a prayer."
-  }
+  "2025-08-01": "Like St. Alphonsus, let us root our lives in prayer and trust in Mary’s intercession.",
+  "2025-08-02": "Faithfulness to truth and Eucharistic devotion sustain us like St. Eusebius and St. Peter Julian.",
+  "2025-08-03": "Christ is the Bread of Life—receive Him with faith and let Him nourish your soul.",
+  "2025-08-04": "St. John Vianney reminds us that holiness is found in humble, faithful service.",
+  "2025-08-05": "Mary, Mother of God, intercedes for us; let her example guide our trust in Christ.",
+  "2025-08-06": "The Transfiguration reveals Jesus’ glory—look to Him with eyes of faith.",
+  "2025-08-07": "Witness to the truth like St. Sixtus and his companions, and serve with zeal like St. Cajetan.",
+  "2025-08-08": "Preach Christ not only in words but in the witness of your life, like St. Dominic.",
+  "2025-08-09": "St. Teresa Benedicta teaches courage and fidelity even in suffering.",
+  "2025-08-10": "Like St. Lawrence, let us joyfully serve the poor and embrace the Cross.",
+  "2025-08-11": "St. Clare’s simplicity shows us the beauty of a life centered on Christ.",
+  "2025-08-12": "Prayer and charity, as lived by St. Jane Frances, lead us closer to God.",
+  "2025-08-13": "Unity in suffering witnesses to Christ, as with Pontian and Hippolytus.",
+  "2025-08-14": "Love is stronger than death—St. Maximilian Kolbe’s sacrifice proves it.",
+  "2025-08-15": "Mary’s Assumption is our hope—where she is, we too are called to be.",
+  "2025-08-16": "St. Stephen of Hungary shows that rulers must serve God and their people.",
+  "2025-08-17": "Faith perseveres even when tested, like the Canaanite woman’s plea to Jesus.",
+  "2025-08-18": "Everyday faithfulness makes us saints in ordinary life.",
+  "2025-08-19": "Let the Sacred Hearts of Jesus and Mary inflame our love, as taught by St. John Eudes.",
+  "2025-08-20": "Seek God’s love with zeal, as St. Bernard of Clairvaux did.",
+  "2025-08-21": "Frequent communion draws us closer to Christ, as Pope St. Pius X taught.",
+  "2025-08-22": "Mary is Queen of Heaven—entrust your life to her maternal care.",
+  "2025-08-23": "St. Rose teaches that holiness flourishes in humility and sacrifice.",
+  "2025-08-24": "Follow Christ with childlike faith like St. Bartholomew.",
+  "2025-08-25": "Govern with justice like St. Louis; educate with love like St. Joseph Calasanz.",
+  "2025-08-26": "Christ is present in the ordinary—seek Him in daily life.",
+  "2025-08-27": "Persistent prayer brings forth conversion, as with St. Monica and Augustine.",
+  "2025-08-28": "St. Augustine reminds us: ‘Our hearts are restless until they rest in You, O Lord.’",
+  "2025-08-29": "Like John the Baptist, witness to the truth even when it costs dearly.",
+  "2025-08-30": "Live the Gospel in the small moments of daily life.",
+  "2025-08-31": "True greatness lies in humility and service, as Christ teaches today."
 }
