@@ -1,62 +1,25 @@
-[
-  {
-    "date": "2025-08-01",
-    "saint": "Saint Alphonsus Liguori, Bishop and Doctor of the Church",
-    "feast_type": "Memorial",
-    "liturgical_color": "white"
-  },
-  {
-    "date": "2025-08-02",
-    "saint": "Saint Eusebius of Vercelli, Bishop",
-    "feast_type": "Optional Memorial",
-    "liturgical_color": "white"
-  },
-  {
-    "date": "2025-08-04",
-    "saint": "Saint John Vianney, Priest",
-    "feast_type": "Memorial",
-    "liturgical_color": "white"
-  },
-  {
-    "date": "2025-08-06",
-    "saint": "The Transfiguration of the Lord",
-    "feast_type": "Feast",
-    "liturgical_color": "white"
-  },
-  {
-    "date": "2025-08-10",
-    "saint": "Saint Lawrence, Deacon and Martyr",
-    "feast_type": "Feast",
-    "liturgical_color": "red"
-  },
-  {
-    "date": "2025-08-15",
-    "saint": "The Assumption of the Blessed Virgin Mary",
-    "feast_type": "Solemnity",
-    "liturgical_color": "white"
-  },
-  {
-    "date": "2025-08-20",
-    "saint": "Saint Bernard, Abbot and Doctor of the Church",
-    "feast_type": "Memorial",
-    "liturgical_color": "white"
-  },
-  {
-    "date": "2025-08-22",
-    "saint": "Queenship of the Blessed Virgin Mary",
-    "feast_type": "Memorial",
-    "liturgical_color": "white"
-  },
-  {
-    "date": "2025-08-24",
-    "saint": "Saint Bartholomew, Apostle",
-    "feast_type": "Feast",
-    "liturgical_color": "red"
-  },
-  {
-    "date": "2025-08-28",
-    "saint": "Saint Augustine, Bishop and Doctor of the Church",
-    "feast_type": "Memorial",
-    "liturgical_color": "white"
-  }
-]
+{
+  "2025-08-01": { "saint": "St. Alphonsus Liguori", "color": "White" },
+  "2025-08-06": { "saint": "Transfiguration of the Lord", "color": "White" },
+  "2025-08-10": { "saint": "St. Lawrence, Deacon and Martyr", "color": "Red" },
+  "2025-08-15": { "saint": "Assumption of the Blessed Virgin Mary", "color": "White" },
+  "2025-08-28": { "saint": "St. Augustine of Hippo", "color": "White" },
+
+  "2025-09-08": { "saint": "Nativity of the Blessed Virgin Mary", "color": "White" },
+  "2025-09-14": { "saint": "Exaltation of the Holy Cross", "color": "Red" },
+  "2025-09-21": { "saint": "St. Matthew, Apostle and Evangelist", "color": "Red" },
+  "2025-09-29": { "saint": "Sts. Michael, Gabriel, and Raphael, Archangels", "color": "White" },
+  "2025-09-30": { "saint": "St. Jerome, Priest and Doctor", "color": "White" },
+
+  "2025-10-01": { "saint": "St. Thérèse of the Child Jesus (Lisieux)", "color": "White" },
+  "2025-10-04": { "saint": "St. Francis of Assisi", "color": "White" },
+  "2025-10-07": { "saint": "Our Lady of the Rosary", "color": "White" },
+  "2025-10-15": { "saint": "St. Teresa of Jesus (Avila), Doctor", "color": "White" },
+  "2025-10-18": { "saint": "St. Luke, Evangelist", "color": "Red" },
+
+  "2025-11-01": { "saint": "All Saints", "color": "White" },
+  "2025-11-02": { "saint": "All Souls", "color": "Purple" },
+  "2025-11-09": { "saint": "Dedication of the Lateran Basilica", "color": "White" },
+  "2025-11-22": { "saint": "St. Cecilia, Virgin and Martyr", "color": "Red" },
+  "2025-11-30": { "saint": "St. Andrew, Apostle", "color": "Red" }
+}
