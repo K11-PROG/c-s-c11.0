@@ -1,3 +1,5 @@
-# Catholic Saints Calendar — Phase 2.3.1
-
-Run: `pip install -r requirements.txt && streamlit run app.py`
+# Catholic Saints Calendar — Phase 2.4 Minimal
+This is a minimal working version (August only, English).
+- Includes search and dropdown filters.
+- History and meditation are separated.
+- Liturgical colors included.

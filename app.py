@@ -1,98 +1,37 @@
 import streamlit as st
 import json
-import calendar
+import os
 
-st.set_page_config(page_title="Catholic Saints Calendar", layout="centered")
+st.set_page_config(page_title="Catholic Saints Calendar", layout="wide")
 
-@st.cache_data
-def load_json(path):
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+# Load data
+data_file = "data/calendar_2025_en.json"
+if not os.path.exists(data_file):
+    st.error(f"Required file not found: {data_file}")
+else:
+    with open(data_file, "r", encoding="utf-8") as f:
+        calendar_data = json.load(f)
 
-calendar_data = load_json("data/calendar_2025_en.json")
-meditations_data = load_json("data/meditations_2025_en.json")
+# Sidebar
+st.sidebar.title("Navigation")
+dates = sorted(calendar_data.keys())
+selected_date = st.sidebar.selectbox("Select Date", dates)
 
-def ymd_to_month_label(ymd: str) -> str:
-    y, m, _ = ymd.split("-")
-    return f"{calendar.month_name[int(m)]} {y}"
+# Search + Filter
+query = st.sidebar.text_input("Search Saint or Feast")
+if query:
+    filtered_dates = [d for d, v in calendar_data.items() if query.lower() in v["saint"].lower()]
+    if filtered_dates:
+        selected_date = st.sidebar.selectbox("Results", filtered_dates)
 
-def sorted_dates(dates):
-    return sorted(dates)
-
-def month_sort_key(label: str):
-    parts = label.split()
-    mname = parts[0]
-    year = int(parts[1])
-    month_to_num = {m: i for i, m in enumerate(calendar.month_name) if m}
-    return (year, month_to_num[mname])
-
-all_types = sorted({v.get("type","") for v in calendar_data.values() if v.get("type")})
-all_colors = sorted({v.get("color","") for v in calendar_data.values() if v.get("color")})
-months_present = sorted({ymd_to_month_label(k) for k in calendar_data.keys()}, key=month_sort_key)
-
-st.sidebar.header("Filters")
-month_label = st.sidebar.selectbox("Month", options=months_present)
-q = st.sidebar.text_input("Search (saint, feast, text)")
-type_filter = st.sidebar.multiselect("Feast Type", options=all_types)
-color_filter = st.sidebar.multiselect("Liturgical Color", options=all_colors)
-
-dates_in_month = [d for d in calendar_data.keys() if ymd_to_month_label(d) == month_label]
-
-def match_filters(ymd):
-    item = calendar_data[ymd]
-    if type_filter and item.get("type") not in type_filter:
-        return False
-    if color_filter and item.get("color") not in color_filter:
-        return False
-    if q:
-        ql = q.lower()
-        hay = " ".join([
-            item.get("feast",""),
-            " ".join(item.get("saints",[])),
-            meditations_data.get(ymd,{}).get("history",""),
-            meditations_data.get(ymd,{}).get("reflection",""),
-        ]).lower()
-        if ql not in hay:
-            return False
-    return True
-
-filtered_dates = [d for d in dates_in_month if match_filters(d)]
-if not filtered_dates:
-    filtered_dates = sorted_dates(dates_in_month)
-
-date_choice = st.sidebar.selectbox("Date", options=sorted_dates(filtered_dates))
-
-item = calendar_data[date_choice]
-med = meditations_data.get(date_choice, {"history":"No history available.","reflection":"No reflection available."})
-
-st.title("📅 Catholic Saints Calendar 2025 (Phase 2.3.1)")
-st.caption("Search + filters + month switcher + fixed date dropdown + robust month sort")
-
-st.subheader(f"{date_choice} — {item['feast']}")
-if item.get("saints"):
-    st.write(f"**Saint(s):** {', '.join(item['saints'])}")
-st.write(f"**Feast Type:** {item.get('type','—')}")
-st.write(f"**Liturgical Color:** {item.get('color','—')}")
-
-st.markdown('---')
-st.header('📖 History / Biography')
-st.write(med.get('history','No history available.'))
-
-st.header('🙏 Reflection / Meditation')
-st.write(med.get('reflection','No reflection available.'))
-
-st.markdown('---')
-st.subheader('📝 Personal Notes')
-note_file = f"notes/{date_choice}.txt"
-existing = ''
-try:
-    with open(note_file, 'r', encoding='utf-8') as f:
-        existing = f.read()
-except FileNotFoundError:
-    pass
-
-note_text = st.text_area('Write your note for this day:', value=existing, height=150)
-if st.button('Save Note'):
-    with open(note_file, 'w', encoding='utf-8') as f:
-        f.write(note_text)
-    st.success('Note saved!')
+# Main content
+if selected_date in calendar_data:
+    entry = calendar_data[selected_date]
+    st.title(f"{selected_date} — {entry['saint']}")
+    st.markdown(f"**Liturgical Color:** {entry['color']}")
+    st.subheader("History / Biography")
+    st.write(entry["history"])
+    st.subheader("Reflection / Meditation")
+    st.write(entry["meditation"])
+else:
+    st.error("Date not found in dataset.")
