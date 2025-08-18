@@ -1,12 +1,85 @@
 {
-  "2025-08-01": "Saint Alphonsus Liguori devoted his life to helping the poor and spreading the Gospel. Today, consider ways you can live generously in both word and deed.",
-  "2025-08-02": "Saint Eusebius of Vercelli was a courageous defender of the faith. Stand firm today in truth, even when it is unpopular.",
-  "2025-08-04": "Saint John Vianney reminds us of the power of confession and pastoral care. Seek God's mercy and extend it to others.",
-  "2025-08-06": "At the Transfiguration, Jesus reveals His divine glory. Ask Him to transform your heart so it reflects His light to the world.",
-  "2025-08-10": "Saint Lawrence showed joy even in martyrdom. Pray for the grace to remain joyful in trials.",
-  "2025-08-15": "Mary's Assumption into Heaven points us to our final home. Live today with Heaven in mind.",
-  "2025-08-20": "Saint Bernard's love for Jesus and Mary shaped his life. Ask for a deeper devotion to Christ.",
-  "2025-08-22": "Mary's Queenship reminds us she intercedes for us as a loving Mother. Bring your needs to her.",
-  "2025-08-24": "Saint Bartholomew followed Jesus with sincerity. Pray for the gift of honesty in faith.",
-  "2025-08-28": "Saint Augustine's conversion teaches us that no one is beyond God's mercy. Invite Him to renew your heart."
+  "2025-08-01": {
+    "history": "St. Alphonsus (1696–1787), bishop and Doctor of the Church, founded the Redemptorists and wrote influential works on moral theology and devotion to Mary.",
+    "meditation": "Ask the Lord for a merciful heart that holds truth and compassion together, following the spirit of St. Alphonsus."
+  },
+  "2025-08-06": {
+    "history": "Christ revealed His glory on Mount Tabor before Peter, James, and John, strengthening them ahead of His Passion.",
+    "meditation": "Pray to see Christ’s light in daily life, especially when you face darkness or confusion."
+  },
+  "2025-08-10": {
+    "history": "St. Lawrence was a third-century Roman deacon who cared for the poor and was martyred under Valerian.",
+    "meditation": "Offer a concrete act of charity today for someone in need, with a joyful heart."
+  },
+  "2025-08-15": {
+    "history": "The Assumption honors Mary taken body and soul into heaven, a pledge of the resurrection promised to all faithful.",
+    "meditation": "Mary, lead me closer to your Son. Teach me to hope in the glory God prepares for those who love Him."
+  },
+  "2025-08-28": {
+    "history": "St. Augustine (354–430), bishop of Hippo and Doctor of the Church, shaped Western Christianity through works like Confessions and City of God.",
+    "meditation": "Lord, make my heart restless for You alone, as Augustine’s heart found rest in Your truth."
+  },
+
+  "2025-09-08": {
+    "history": "The Church celebrates the birth of Mary, the dawn announcing the coming of Christ.",
+    "meditation": "Give thanks for the hidden beginnings of grace in your life; God prepares His work quietly and faithfully."
+  },
+  "2025-09-14": {
+    "history": "The Exaltation of the Holy Cross venerates the instrument of our salvation and proclaims Christ’s triumph through love.",
+    "meditation": "Embrace a small cross today with patience, uniting it to Christ’s saving love."
+  },
+  "2025-09-21": {
+    "history": "St. Matthew, once a tax collector, was called by Jesus to become an apostle and evangelist.",
+    "meditation": "Ask for a listening heart that hears Christ say, ‘Follow me,’ in your concrete circumstances."
+  },
+  "2025-09-29": {
+    "history": "The Archangels Michael, Gabriel, and Raphael serve God’s plan: defending, announcing, and healing.",
+    "meditation": "Invoke the holy angels for protection, clarity, and healing for yourself and those you love."
+  },
+  "2025-09-30": {
+    "history": "St. Jerome (c. 347–420), priest and Doctor, translated the Bible into Latin (the Vulgate) and championed Scriptural study.",
+    "meditation": "Read and pray with a short Gospel passage today; ask the Spirit to kindle a love for Scripture."
+  },
+
+  "2025-10-01": {
+    "history": "St. Thérèse of the Child Jesus (1873–1897), Doctor of the Church, taught the ‘little way’ of trusting love.",
+    "meditation": "Offer a small hidden sacrifice with love; God sees greatness in littleness."
+  },
+  "2025-10-04": {
+    "history": "St. Francis of Assisi (1181/2–1226) renewed the Church through poverty, simplicity, and love for all creation.",
+    "meditation": "Choose simplicity in one decision today, and praise God for the goodness of His creation."
+  },
+  "2025-10-07": {
+    "history": "Our Lady of the Rosary celebrates Mary’s intercession and the Gospel mysteries contemplated in the Rosary.",
+    "meditation": "Pray one decade of the Rosary, slowly, letting each mystery lead you to Christ."
+  },
+  "2025-10-15": {
+    "history": "St. Teresa of Jesus (1515–1582), Carmelite reformer and Doctor, taught deep prayer and friendship with God.",
+    "meditation": "Take five minutes of quiet, simply placing yourself in God’s loving presence without many words."
+  },
+  "2025-10-18": {
+    "history": "St. Luke, companion of St. Paul, authored the Gospel of Luke and Acts, highlighting God’s mercy for the poor and sinners.",
+    "meditation": "Imitate God’s mercy today: forgive quickly, speak kindly, and seek out the overlooked."
+  },
+
+  "2025-11-01": {
+    "history": "All Saints honors the vast communion of holy men and women, known and unknown, who share God’s glory.",
+    "meditation": "Choose a favorite saint and ask their intercession to live your vocation faithfully."
+  },
+  "2025-11-02": {
+    "history": "All Souls invites prayer for the faithful departed, confident in God’s mercy and purification.",
+    "meditation": "Pray for departed loved ones by name, entrusting them to the Lord’s mercy."
+  },
+  "2025-11-09": {
+    "history": "The Lateran Basilica, cathedral of the Bishop of Rome, symbolizes the unity of the Church.",
+    "meditation": "Pray for the Church’s unity and renew your love for your local parish community."
+  },
+  "2025-11-22": {
+    "history": "St. Cecilia, a Roman martyr, is patroness of sacred music and Christian joy amid trials.",
+    "meditation": "Offer a song of praise or a grateful prayer, even if you’re carrying a hidden cross."
+  },
+  "2025-11-30": {
+    "history": "St. Andrew, the first-called apostle, brought others to Christ, including his brother Peter.",
+    "meditation": "Invite one person closer to Christ today—through an encouragement, an invitation, or a prayer."
+  }
 }
