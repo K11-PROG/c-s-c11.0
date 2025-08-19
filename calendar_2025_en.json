@@ -1,219 +1,33 @@
 {
-  "2025-08-01": {
-    "saint": "St. Alphonsus Liguori",
-    "liturgical_color": "White",
-    "feast_type": "Memorial",
-    "history": "St. Alphonsus (1696–1787) was a bishop, doctor of the Church, and founder of the Redemptorists. He is known for his moral theology and Marian devotion.",
-    "meditation_ref": "2025-08-01"
-  },
-  "2025-08-02": {
-    "saint": "St. Eusebius of Vercelli & St. Peter Julian Eymard",
-    "liturgical_color": "White",
-    "feast_type": "Optional Memorial",
-    "history": "St. Eusebius (d. 371) defended the Nicene faith against Arianism. St. Peter Julian Eymard (1811–1868) founded the Congregation of the Blessed Sacrament.",
-    "meditation_ref": "2025-08-02"
-  },
-  "2025-08-03": {
-    "saint": "18th Sunday in Ordinary Time",
-    "liturgical_color": "Green",
-    "feast_type": "Sunday",
-    "history": "Ordinary Time Sundays draw from the Gospel to deepen discipleship. Today recalls Christ as the Bread of Life.",
-    "meditation_ref": "2025-08-03"
-  },
-  "2025-08-04": {
-    "saint": "St. John Vianney",
-    "liturgical_color": "White",
-    "feast_type": "Memorial",
-    "history": "St. John Vianney (1786–1859), the Curé of Ars, was a French parish priest known for his holiness and pastoral zeal.",
-    "meditation_ref": "2025-08-04"
-  },
-  "2025-08-05": {
-    "saint": "Dedication of the Basilica of St. Mary Major",
-    "liturgical_color": "White",
-    "feast_type": "Optional Memorial",
-    "history": "This basilica in Rome, dedicated after the Council of Ephesus (431), honors Mary as Mother of God.",
-    "meditation_ref": "2025-08-05"
-  },
-  "2025-08-06": {
-    "saint": "Transfiguration of the Lord",
-    "liturgical_color": "White",
-    "feast_type": "Feast",
-    "history": "The Transfiguration reveals Christ’s divine glory on Mount Tabor before Peter, James, and John.",
-    "meditation_ref": "2025-08-06"
-  },
-  "2025-08-07": {
-    "saint": "St. Sixtus II & Companions, Martyrs; St. Cajetan",
-    "liturgical_color": "Red/White",
-    "feast_type": "Optional Memorial",
-    "history": "Pope Sixtus II and his companions were martyred under Valerian in 258. St. Cajetan (1480–1547) co-founded the Theatines.",
-    "meditation_ref": "2025-08-07"
-  },
-  "2025-08-08": {
-    "saint": "St. Dominic",
-    "liturgical_color": "White",
-    "feast_type": "Memorial",
-    "history": "St. Dominic (1170–1221) founded the Order of Preachers (Dominicans), emphasizing study and preaching.",
-    "meditation_ref": "2025-08-08"
-  },
-  "2025-08-09": {
-    "saint": "St. Teresa Benedicta of the Cross (Edith Stein), Martyr",
-    "liturgical_color": "Red",
-    "feast_type": "Optional Memorial",
-    "history": "A Jewish convert, Carmelite nun, philosopher, and martyr at Auschwitz (1942). Canonized in 1998.",
-    "meditation_ref": "2025-08-09"
-  },
-  "2025-08-10": {
-    "saint": "St. Lawrence, Deacon & Martyr",
-    "liturgical_color": "Red",
-    "feast_type": "Feast",
-    "history": "Lawrence, a Roman deacon, was martyred in 258. His courage and service to the poor are legendary.",
-    "meditation_ref": "2025-08-10"
-  },
-  "2025-08-11": {
-    "saint": "St. Clare of Assisi",
-    "liturgical_color": "White",
-    "feast_type": "Memorial",
-    "history": "St. Clare (1193–1253) was the first female follower of St. Francis, founder of the Poor Clares.",
-    "meditation_ref": "2025-08-11"
-  },
-  "2025-08-12": {
-    "saint": "St. Jane Frances de Chantal",
-    "liturgical_color": "White",
-    "feast_type": "Optional Memorial",
-    "history": "Founder of the Visitation Order with St. Francis de Sales; lived a life of deep prayer and charity.",
-    "meditation_ref": "2025-08-12"
-  },
-  "2025-08-13": {
-    "saint": "Sts. Pontian and Hippolytus, Martyrs",
-    "liturgical_color": "Red",
-    "feast_type": "Optional Memorial",
-    "history": "Pope Pontian (d. 235) and Hippolytus were exiled and martyred together in Sardinia.",
-    "meditation_ref": "2025-08-13"
-  },
-  "2025-08-14": {
-    "saint": "St. Maximilian Kolbe, Martyr",
-    "liturgical_color": "Red",
-    "feast_type": "Memorial",
-    "history": "A Polish Franciscan (1894–1941), Kolbe gave his life at Auschwitz in place of another prisoner.",
-    "meditation_ref": "2025-08-14"
-  },
-  "2025-08-15": {
-    "saint": "Assumption of the Blessed Virgin Mary",
-    "liturgical_color": "White",
-    "feast_type": "Solemnity",
-    "history": "Celebrates Mary’s assumption body and soul into heavenly glory.",
-    "meditation_ref": "2025-08-15"
-  },
-  "2025-08-16": {
-    "saint": "St. Stephen of Hungary",
-    "liturgical_color": "White",
-    "feast_type": "Optional Memorial",
-    "history": "King Stephen (975–1038) established Christianity in Hungary and was canonized in 1083.",
-    "meditation_ref": "2025-08-16"
-  },
-  "2025-08-17": {
-    "saint": "20th Sunday in Ordinary Time",
-    "liturgical_color": "Green",
-    "feast_type": "Sunday",
-    "history": "This Sunday’s Gospel reminds us of faith’s persistence, as shown in the Canaanite woman.",
-    "meditation_ref": "2025-08-17"
-  },
-  "2025-08-18": {
-    "saint": "Weekday in Ordinary Time",
-    "liturgical_color": "Green",
-    "feast_type": "Weekday",
-    "history": "Ordinary Time weekdays offer space for reflection on Christ’s teaching in daily life.",
-    "meditation_ref": "2025-08-18"
-  },
-  "2025-08-19": {
-    "saint": "St. John Eudes",
-    "liturgical_color": "White",
-    "feast_type": "Optional Memorial",
-    "history": "French priest (1601–1680), founder of the Congregation of Jesus and Mary, promoter of devotion to the Sacred Hearts.",
-    "meditation_ref": "2025-08-19"
-  },
-  "2025-08-20": {
-    "saint": "St. Bernard of Clairvaux",
-    "liturgical_color": "White",
-    "feast_type": "Memorial",
-    "history": "Bernard (1090–1153), Cistercian abbot, was a great preacher, mystic, and reformer.",
-    "meditation_ref": "2025-08-20"
-  },
-  "2025-08-21": {
-    "saint": "St. Pius X, Pope",
-    "liturgical_color": "White",
-    "feast_type": "Memorial",
-    "history": "Pope Pius X (1835–1914) promoted frequent communion and reformed Church liturgy.",
-    "meditation_ref": "2025-08-21"
-  },
-  "2025-08-22": {
-    "saint": "Queenship of the Blessed Virgin Mary",
-    "liturgical_color": "White",
-    "feast_type": "Memorial",
-    "history": "Instituted by Pope Pius XII (1954), this feast honors Mary as Queen of Heaven and Earth.",
-    "meditation_ref": "2025-08-22"
-  },
-  "2025-08-23": {
-    "saint": "St. Rose of Lima",
-    "liturgical_color": "White",
-    "feast_type": "Optional Memorial",
-    "history": "St. Rose (1586–1617), first canonized saint of the Americas, lived a life of penance and prayer in Peru.",
-    "meditation_ref": "2025-08-23"
-  },
-  "2025-08-24": {
-    "saint": "St. Bartholomew, Apostle",
-    "liturgical_color": "Red",
-    "feast_type": "Feast",
-    "history": "Bartholomew (Nathanael in John’s Gospel) was one of the Twelve Apostles, known for his simple faith.",
-    "meditation_ref": "2025-08-24"
-  },
-  "2025-08-25": {
-    "saint": "St. Louis of France; St. Joseph Calasanz",
-    "liturgical_color": "White",
-    "feast_type": "Optional Memorial",
-    "history": "King Louis IX (1214–1270) was a model Christian ruler. St. Joseph Calasanz (1557–1648) founded the Piarists.",
-    "meditation_ref": "2025-08-25"
-  },
-  "2025-08-26": {
-    "saint": "Weekday in Ordinary Time",
-    "liturgical_color": "Green",
-    "feast_type": "Weekday",
-    "history": "Ordinary Time continues the Gospel journey with Christ in daily life.",
-    "meditation_ref": "2025-08-26"
-  },
-  "2025-08-27": {
-    "saint": "St. Monica",
-    "liturgical_color": "White",
-    "feast_type": "Memorial",
-    "history": "St. Monica (331–387), mother of St. Augustine, is remembered for her patience and persistent prayer.",
-    "meditation_ref": "2025-08-27"
-  },
-  "2025-08-28": {
-    "saint": "St. Augustine, Bishop & Doctor",
-    "liturgical_color": "White",
-    "feast_type": "Memorial",
-    "history": "St. Augustine (354–430) was Bishop of Hippo, a brilliant theologian, and one of the greatest Fathers of the Church.",
-    "meditation_ref": "2025-08-28"
-  },
-  "2025-08-29": {
-    "saint": "Passion of St. John the Baptist",
-    "liturgical_color": "Red",
-    "feast_type": "Memorial",
-    "history": "This day commemorates the martyrdom of John the Baptist, who bore fearless witness to the truth.",
-    "meditation_ref": "2025-08-29"
-  },
-  "2025-08-30": {
-    "saint": "Weekday in Ordinary Time",
-    "liturgical_color": "Green",
-    "feast_type": "Weekday",
-    "history": "Ordinary Time provides space to reflect on Christ’s teachings in ordinary life.",
-    "meditation_ref": "2025-08-30"
-  },
-  "2025-08-31": {
-    "saint": "22nd Sunday in Ordinary Time",
-    "liturgical_color": "Green",
-    "feast_type": "Sunday",
-    "history": "This Sunday’s Gospel calls us to humility and self-sacrifice in following Christ.",
-    "meditation_ref": "2025-08-31"
-  }
+  "2025-08-01": { "saint": "St. Alphonsus Liguori", "feast_type": "Memorial", "liturgical_color": "White", "history": "Bishop and Doctor of the Church, founder of the Redemptorists." },
+  "2025-08-02": { "saint": "St. Eusebius of Vercelli; St. Peter Julian Eymard", "feast_type": "Optional Memorial", "liturgical_color": "White", "history": "Eusebius was a bishop and defender of the faith; Eymard founded the Blessed Sacrament Congregation." },
+  "2025-08-03": { "saint": "18th Sunday in Ordinary Time", "feast_type": "Sunday", "liturgical_color": "Green", "history": "Ordinary Time continues, focusing on Christ’s ministry." },
+  "2025-08-04": { "saint": "St. John Vianney", "feast_type": "Memorial", "liturgical_color": "White", "history": "Patron saint of parish priests, known as the Curé of Ars." },
+  "2025-08-05": { "saint": "Dedication of the Basilica of St. Mary Major", "feast_type": "Optional Memorial", "liturgical_color": "White", "history": "First church in the West dedicated to Our Lady." },
+  "2025-08-06": { "saint": "Transfiguration of the Lord", "feast_type": "Feast", "liturgical_color": "White", "history": "Jesus revealed His glory on Mount Tabor before Peter, James, and John." },
+  "2025-08-07": { "saint": "St. Sixtus II and Companions, Martyrs; St. Cajetan", "feast_type": "Optional Memorial", "liturgical_color": "Red", "history": "Sixtus was a pope martyred with companions; Cajetan founded the Theatines." },
+  "2025-08-08": { "saint": "St. Dominic", "feast_type": "Memorial", "liturgical_color": "White", "history": "Founder of the Order of Preachers (Dominicans)." },
+  "2025-08-09": { "saint": "St. Teresa Benedicta of the Cross (Edith Stein)", "feast_type": "Memorial", "liturgical_color": "Red", "history": "Carmelite nun and martyr of Auschwitz." },
+  "2025-08-10": { "saint": "St. Lawrence", "feast_type": "Feast", "liturgical_color": "Red", "history": "Deacon and martyr of Rome, known for his charity." },
+  "2025-08-11": { "saint": "St. Clare", "feast_type": "Memorial", "liturgical_color": "White", "history": "Follower of St. Francis, founder of the Poor Clares." },
+  "2025-08-12": { "saint": "St. Jane Frances de Chantal", "feast_type": "Optional Memorial", "liturgical_color": "White", "history": "Founder of the Visitation Order with St. Francis de Sales." },
+  "2025-08-13": { "saint": "Sts. Pontian and Hippolytus, Martyrs", "feast_type": "Optional Memorial", "liturgical_color": "Red", "history": "Pope Pontian and priest Hippolytus reconciled before martyrdom." },
+  "2025-08-14": { "saint": "St. Maximilian Kolbe", "feast_type": "Memorial", "liturgical_color": "Red", "history": "Franciscan priest who gave his life in Auschwitz." },
+  "2025-08-15": { "saint": "Assumption of the Blessed Virgin Mary", "feast_type": "Solemnity", "liturgical_color": "White", "history": "Mary was assumed body and soul into heavenly glory." },
+  "2025-08-16": { "saint": "St. Stephen of Hungary", "feast_type": "Optional Memorial", "liturgical_color": "White", "history": "First king of Hungary, brought Christianity to his people." },
+  "2025-08-17": { "saint": "20th Sunday in Ordinary Time", "feast_type": "Sunday", "liturgical_color": "Green", "history": "Ordinary Time continues, focusing on faith and perseverance." },
+  "2025-08-18": { "saint": "Weekday in Ordinary Time", "feast_type": "Weekday", "liturgical_color": "Green", "history": "" },
+  "2025-08-19": { "saint": "St. John Eudes", "feast_type": "Optional Memorial", "liturgical_color": "White", "history": "Priest and promoter of devotion to the Sacred and Immaculate Hearts." },
+  "2025-08-20": { "saint": "St. Bernard", "feast_type": "Memorial", "liturgical_color": "White", "history": "Cistercian abbot and Doctor of the Church." },
+  "2025-08-21": { "saint": "St. Pius X", "feast_type": "Memorial", "liturgical_color": "White", "history": "Pope known for liturgical reforms and promoting frequent Communion." },
+  "2025-08-22": { "saint": "Queenship of the Blessed Virgin Mary", "feast_type": "Memorial", "liturgical_color": "White", "history": "Celebrates Mary as Queen of Heaven and Earth." },
+  "2025-08-23": { "saint": "St. Rose of Lima", "feast_type": "Optional Memorial", "liturgical_color": "White", "history": "First canonized saint of the Americas." },
+  "2025-08-24": { "saint": "St. Bartholomew, Apostle", "feast_type": "Feast", "liturgical_color": "Red", "history": "One of the Twelve Apostles, traditionally martyred for his faith." },
+  "2025-08-25": { "saint": "St. Louis; St. Joseph Calasanz", "feast_type": "Optional Memorial", "liturgical_color": "White", "history": "Louis IX, king of France; Calasanz founded the Piarists." },
+  "2025-08-26": { "saint": "Weekday in Ordinary Time", "feast_type": "Weekday", "liturgical_color": "Green", "history": "" },
+  "2025-08-27": { "saint": "St. Monica", "feast_type": "Memorial", "liturgical_color": "White", "history": "Mother of St. Augustine, known for her perseverance in prayer." },
+  "2025-08-28": { "saint": "St. Augustine", "feast_type": "Memorial", "liturgical_color": "White", "history": "Bishop and Doctor of the Church." },
+  "2025-08-29": { "saint": "Passion of St. John the Baptist", "feast_type": "Memorial", "liturgical_color": "Red", "history": "Beheaded for speaking truth to power." },
+  "2025-08-30": { "saint": "Weekday in Ordinary Time", "feast_type": "Weekday", "liturgical_color": "Green", "history": "" },
+  "2025-08-31": { "saint": "22nd Sunday in Ordinary Time", "feast_type": "Sunday", "liturgical_color": "Green", "history": "" }
 }
