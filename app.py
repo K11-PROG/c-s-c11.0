@@ -1,130 +1,175 @@
+import json
+from datetime import date, datetime
+from pathlib import Path
 import streamlit as st
-import json, os, calendar
-from datetime import datetime, date, timedelta
 
-st.set_page_config(page_title="Catholic Saints Calendar", layout="wide")
+DATA_DIR = Path("data")
+CAL_PATH = DATA_DIR / "calendar_2025_en.json"
+MED_PATH = DATA_DIR / "meditations_2025_en.json"
 
 @st.cache_data
-def load_json(path):
-    with open(path, "r", encoding="utf-8") as f:
+def load_json(p: Path):
+    with p.open("r", encoding="utf-8") as f:
         return json.load(f)
 
-DATA_CAL = "data/calendar_2025_en.json"
-DATA_MED = "data/meditations_2025_en.json"
+def ymd_to_label(ymd: str) -> str:
+    dt = datetime.strptime(ymd, "%Y-%m-%d").date()
+    return dt.strftime("%B %d, %Y")
 
-missing = [p for p in (DATA_CAL, DATA_MED) if not os.path.exists(p)]
-if missing:
-    st.error("Required file(s) missing:\n" + "\n".join(missing))
-    st.stop()
+def liturgical_badge(color: str) -> str:
+    # Simple colored pill; tweak colors here.
+    color_map = {
+        "White": "#f5f5f5",
+        "Red": "#ffdddd",
+        "Green": "#ddffdd",
+        "Violet": "#eadcff",
+        "Rose": "#ffe6f2",
+        "Black": "#eeeeee",
+        "Gold": "#fff6cc",
+    }
+    fg_map = {
+        "White": "#333",
+        "Red": "#900",
+        "Green": "#064",
+        "Violet": "#5a2d82",
+        "Rose": "#a11d5f",
+        "Black": "#222",
+        "Gold": "#7a6000",
+    }
+    bg = color_map.get(color, "#eeeeee")
+    fg = fg_map.get(color, "#333")
+    return f"""
+    <span style="
+      display:inline-block;padding:.20rem .55rem;border-radius:999px;
+      background:{bg};color:{fg};font-size:.85rem;border:1px solid rgba(0,0,0,.06)
+    ">{color}</span>
+    """
 
-calendar_data = load_json(DATA_CAL)     # { "YYYY-MM-DD": {...} }
-meditations_data = load_json(DATA_MED)  # { "YYYY-MM-DD": "..." or {...} }
+def apply_background(url: str):
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url('{url}');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
 
-# ---------- helpers ----------
-def to_date(s): return datetime.strptime(s, "%Y-%m-%d").date()
-def month_key(d: date): return f"{d.year:04d}-{d.month:02d}"
-def month_label(y, m): return date(y, m, 1).strftime("%B %Y")
-def normalize_entry(day_str):
-    """Accept either 'color' or 'liturgical_color', and optional feast_type/history."""
-    e = calendar_data.get(day_str, {}) or {}
-    saint = e.get("saint") or e.get("title") or "(Unknown)"
-    color = e.get("liturgical_color") or e.get("color") or "Green"
-    ftype = e.get("feast_type") or e.get("type") or None
-    history = e.get("history")
-    # meditation may live in meditations file as str or object
-    med_entry = meditations_data.get(day_str)
-    if isinstance(med_entry, dict):
-        meditation = med_entry.get("meditation") or med_entry.get("reflection") or ""
-        # prefer richer history if meditation file carries it
-        history = med_entry.get("history") or history
+def main():
+    st.set_page_config(page_title="Catholic Saints Calendar 2025", layout="wide")
+
+    if not CAL_PATH.exists() or not MED_PATH.exists():
+        st.error("Required data files not found. Ensure data/calendar_2025_en.json and data/meditations_2025_en.json exist.")
+        st.stop()
+
+    calendar = load_json(CAL_PATH)
+    meditations = load_json(MED_PATH)
+
+    # Sidebar: date + search + filters
+    st.sidebar.header("Browse")
+    today = date.today()
+    chosen = st.sidebar.date_input("Choose date", today)
+    chosen_key = chosen.strftime("%Y-%m-%d")
+
+    # Text search over saint name
+    q = st.sidebar.text_input("Search saint/feast (live)", "")
+    feast_types = sorted({v.get("feast_type", "Weekday") for v in calendar.values()})
+    selected_types = st.sidebar.multiselect("Filter by feast type", feast_types, default=feast_types)
+    colors = sorted({v.get("liturgical_color", "Green") for v in calendar.values()})
+    selected_colors = st.sidebar.multiselect("Filter by color", colors, default=colors)
+
+    # Build an index for the sidebar month/day list
+    all_keys = sorted(calendar.keys())
+    month_filter = st.sidebar.selectbox(
+        "Jump to month",
+        options=sorted({k[:7] for k in all_keys}),  # YYYY-MM
+        index=sorted({k[:7] for k in all_keys}).index(chosen_key[:7]) if chosen_key[:7] in {k[:7] for k in all_keys} else 0
+    )
+    month_days = [k for k in all_keys if k.startswith(month_filter)]
+    pick_day = st.sidebar.selectbox(
+        "Day in month",
+        options=month_days,
+        index=month_days.index(chosen_key) if chosen_key in month_days else 0,
+        format_func=ymd_to_label
+    )
+
+    # If search or filters applied, adjust the chosen day if needed
+    def matches_filters(k: str, v: dict) -> bool:
+        if q and q.lower() not in v.get("saint", "").lower():
+            return False
+        if v.get("feast_type", "Weekday") not in selected_types:
+            return False
+        if v.get("liturgical_color", "Green") not in selected_colors:
+            return False
+        return True
+
+    filtered_keys = [k for k in all_keys if matches_filters(k, calendar[k])]
+    if filtered_keys:
+        if chosen_key not in filtered_keys:
+            chosen_key = filtered_keys[0]
     else:
-        meditation = med_entry or ""
-    return saint, color, ftype, history, meditation
+        st.sidebar.info("No results match your filters/search.")
+        chosen_key = pick_day
 
-def month_days(y, m):
-    """All dates in the month as date objects."""
-    last = calendar.monthrange(y, m)[1]
-    return [date(y, m, d) for d in range(1, last + 1)]
+    # Display chosen date
+    record = calendar.get(chosen_key)
+    med = meditations.get(chosen_key, {})
 
-# ---------- months available ----------
-all_dates = sorted({to_date(k) for k in set(calendar_data.keys()) | set(meditations_data.keys())})
-if not all_dates:
-    st.error("No dates found in the dataset.")
-    st.stop()
+    if not record:
+        st.warning("Date not found in dataset. Showing first available date.")
+        chosen_key = all_keys[0]
+        record = calendar[chosen_key]
+        med = meditations.get(chosen_key, {})
 
-# Build a distinct, ordered list of months based on min..max in data
-first_d, last_d = min(all_dates), max(all_dates)
-months = []
-y, m = first_d.year, first_d.month
-while (y < last_d.year) or (y == last_d.year and m <= last_d.month):
-    months.append((y, m))
-    if m == 12: y, m = y + 1, 1
-    else: m += 1
+    # Optional background: prefer meditation bg, else calendar bg
+    bg = med.get("background") or record.get("background")
+    if bg:
+        apply_background(bg)
 
-labels = [month_label(y, m) for (y, m) in months]
-label_to_ym = dict(zip(labels, months))
+    # Header
+    left, right = st.columns([3,1])
+    with left:
+        st.title(f"{ymd_to_label(chosen_key)} — {record.get('saint','')}")
+        sub = f"{record.get('feast_type','')} • {record.get('liturgical_color','')}"
+        st.markdown(sub)
 
-st.title("Catholic Saints Calendar (robust month view)")
-st.caption("Shows every day of the selected month. Missing days are clearly flagged so you can complete the data.")
+    with right:
+        st.markdown(liturgical_badge(record.get("liturgical_color","")), unsafe_allow_html=True)
 
-# ---------- sidebar ----------
-st.sidebar.header("Navigate")
-sel_label = st.sidebar.selectbox("Month", labels)
-sel_year, sel_month = label_to_ym[sel_label]
+    # Saint image (optional)
+    if record.get("image"):
+        st.image(record["image"], caption=record.get("saint",""), use_container_width=True)
 
-# Compile full month day list and mark coverage
-days = month_days(sel_year, sel_month)
-ds_strings = [d.strftime("%Y-%m-%d") for d in days]
+    # Quote (optional)
+    if record.get("quote"):
+        st.info(f"💬 {record['quote']}")
 
-present = {d for d in ds_strings if (d in calendar_data) or (d in meditations_data)}
-missing_days = [d for d in ds_strings if d not in present]
-coverage = int(round(100 * (len(present) / len(ds_strings)))) if ds_strings else 0
+    # History / bio (optional)
+    if record.get("history"):
+        st.markdown("#### About / History")
+        st.write(record["history"])
 
-st.metric("Month coverage", f"{coverage}%")
-if missing_days:
-    with st.expander(f"Show missing days ({len(missing_days)})"):
-        st.write(", ".join(missing_days))
+    # Meditation
+    if med.get("meditation"):
+        st.markdown("### Daily Meditation")
+        st.write(med["meditation"])
 
-# Optional search inside selected month
-query = st.sidebar.text_input("Search (saint / color / text)", placeholder="e.g., Augustine, Rosary, martyr")
-def matches(day_str):
-    saint, color, ftype, history, meditation = normalize_entry(day_str)
-    hay = " ".join([saint or "", color or "", ftype or "", history or "", meditation or ""]).lower()
-    return (query or "").lower() in hay
+    # Optional extras for meditation
+    if med.get("image"):
+        st.image(med["image"], caption="Meditation", use_container_width=True)
+    if med.get("quote"):
+        st.success(f"✨ {med['quote']}")
+    if med.get("prayer"):
+        st.markdown("#### Closing Prayer")
+        st.write(med["prayer"])
 
-# ---------- date picker (always lists all month days) ----------
-def fmt_day(d: date): return d.strftime("%a %d %b %Y")
-day_choice = st.sidebar.selectbox("Date", days, format_func=fmt_day,
-                                  index=days.index(date.today()) if date(sel_year, sel_month, 1) <= date.today() <= date(sel_year, sel_month, calendar.monthrange(sel_year, sel_month)[1]) else 0)
+    st.divider()
+    st.caption("Tip: put images in /images and backgrounds in /backgrounds. Paths in JSON should be relative (e.g., 'images/jerome.jpg').")
 
-day_str = day_choice.strftime("%Y-%m-%d")
-saint, color, ftype, history, meditation = normalize_entry(day_str)
-
-# Provide graceful defaults for missing entries
-if day_str in missing_days:
-    # Sunday detection for better default type/color
-    dow = day_choice.weekday()  # 0=Mon..6=Sun
-    default_type = "Sunday" if dow == 6 else "Weekday"
-    default_color = "Green" if default_type in ("Weekday", "Sunday") else "Green"
-    saint = saint if saint != "(Unknown)" else (default_type + " in Ordinary Time")
-    color = color or default_color
-    ftype = ftype or default_type
-    history = history or "No entry yet. Add to data/calendar_2025_en.json."
-    meditation = meditation or "No meditation yet. Add to data/meditations_2025_en.json."
-
-st.subheader(f"{fmt_day(day_choice)} — {saint}")
-meta = []
-if ftype: meta.append(f"**Feast type:** {ftype}")
-if color: meta.append(f"**Liturgical color:** {color}")
-if meta: st.markdown(" · ".join(meta))
-
-c1, c2 = st.columns(2)
-with c1:
-    st.markdown("### History / Biography")
-    st.write(history or "—")
-with c2:
-    st.markdown("### Reflection / Meditation")
-    st.write(meditation or "—")
-
-st.divider()
-st.caption("Tip: If some days look missing, use the expander above and paste the needed entries into your JSON files. This view always shows the full real calendar month.")
+if __name__ == "__main__":
+    main()
