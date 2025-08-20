@@ -1,13 +1,6 @@
-# Catholic Saints Calendar — Minimal (Aug–Nov 2025)
+# Catholic Saints Calendar (Offline, 2025, EN)
 
-Minimal, stable base to avoid timeouts and missing-file errors.
-
-## Features
-- English only for now
-- Real saints/feasts (Aug–Nov 2025)
-- Liturgical colors
-- Separate **History** and **Reflection** sections
-- Month & day dropdowns, plus search box
+Offline-friendly Streamlit app showing the General Roman Calendar with daily saints, feast types, liturgical colors, and daily meditations. Supports optional images, quotes, backgrounds, and prayers.
 
 ## Run locally
 ```bash
