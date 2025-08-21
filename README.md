@@ -1,8 +1,17 @@
-# Catholic Saints Calendar (Offline, 2025, EN)
+# Catholic Saints Calendar 2025
 
-Offline-friendly Streamlit app showing the General Roman Calendar with daily saints, feast types, liturgical colors, and daily meditations. Supports optional images, quotes, backgrounds, and prayers.
+A simple Streamlit app to browse the Catholic liturgical calendar and daily meditations for 2025.
 
-## Run locally
-```bash
-pip install -r requirements.txt
-streamlit run app.py
+## Features
+- Full 2025 calendar with feast type, liturgical color, and saint/feast history
+- Daily meditation text
+- Runs fully offline
+
+---
+
+## Setup
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/saints-calendar.git
+   cd saints-calendar
