@@ -1,33 +1,50 @@
 {
-  "2025-01-01": {"saint": "Mary, Mother of God", "feast_type": "Solemnity", "liturgical_color": "White", "history": "Octave of Christmas honoring Mary’s divine motherhood."},
-  "2025-01-02": {"saint": "Sts. Basil the Great & Gregory Nazianzen", "feast_type": "Memorial", "liturgical_color": "White", "history": "Cappadocian Fathers and Doctors of the Church."},
-  "2025-01-03": {"saint": "The Most Holy Name of Jesus", "feast_type": "Optional Memorial", "liturgical_color": "White", "history": "Honors the saving name of Jesus."},
-  "2025-01-04": {"saint": "St. Elizabeth Ann Seton (USA)", "feast_type": "Memorial", "liturgical_color": "White", "history": "First American-born saint; founder of the Sisters of Charity."},
-  "2025-01-05": {"saint": "Epiphany of the Lord", "feast_type": "Solemnity", "liturgical_color": "White", "history": "The manifestation of Christ to the nations through the Magi."},
-  "2025-01-06": {"saint": "St. André Bessette", "feast_type": "Optional Memorial", "liturgical_color": "White", "history": "Humble Canadian religious famed for devotion to St. Joseph."},
-  "2025-01-07": {"saint": "St. Raymond of Peñafort", "feast_type": "Optional Memorial", "liturgical_color": "White", "history": "Dominican, great canonist and confessor."},
-  "2025-01-08": {"saint": "Weekday after Epiphany", "feast_type": "Weekday (Christmas Season)", "liturgical_color": "White", "history": "Continuation of Christmas Season."},
-  "2025-01-09": {"saint": "Weekday after Epiphany", "feast_type": "Weekday (Christmas Season)", "liturgical_color": "White", "history": "Continuation of Christmas Season."},
-  "2025-01-10": {"saint": "Weekday after Epiphany", "feast_type": "Weekday (Christmas Season)", "liturgical_color": "White", "history": "Continuation of Christmas Season."},
-  "2025-01-11": {"saint": "Weekday after Epiphany", "feast_type": "Weekday (Christmas Season)", "liturgical_color": "White", "history": "Continuation of Christmas Season."},
-  "2025-01-12": {"saint": "Baptism of the Lord", "feast_type": "Feast", "liturgical_color": "White", "history": "Closes Christmas Season; Jesus revealed as the beloved Son."},
-  "2025-01-13": {"saint": "St. Hilary of Poitiers", "feast_type": "Memorial", "liturgical_color": "White", "history": "Bishop and Doctor; defender of the Trinity."},
-  "2025-01-14": {"saint": "Weekday in Ordinary Time", "feast_type": "Weekday", "liturgical_color": "Green", "history": "Ordinary Time begins after the Baptism of the Lord."},
-  "2025-01-15": {"saint": "Weekday in Ordinary Time", "feast_type": "Weekday", "liturgical_color": "Green", "history": "Ordinary discipleship lived in daily life."},
-  "2025-01-16": {"saint": "Weekday in Ordinary Time", "feast_type": "Weekday", "liturgical_color": "Green", "history": "Growth in grace through daily fidelity."},
-  "2025-01-17": {"saint": "St. Anthony, Abbot", "feast_type": "Memorial", "liturgical_color": "White", "history": "Father of monks; model of conversion and spiritual warfare."},
-  "2025-01-18": {"saint": "Weekday in Ordinary Time", "feast_type": "Weekday", "liturgical_color": "Green", "history": "Quiet faithfulness in small things."},
-  "2025-01-19": {"saint": "2nd Sunday in Ordinary Time", "feast_type": "Sunday", "liturgical_color": "Green", "history": "The call of the disciples and the Lamb of God."},
-  "2025-01-20": {"saint": "Sts. Fabian, Pope & Sebastian, Martyr", "feast_type": "Optional Memorial", "liturgical_color": "Red", "history": "Witness to Christ amid persecution."},
-  "2025-01-21": {"saint": "St. Agnes, Virgin & Martyr", "feast_type": "Memorial", "liturgical_color": "Red", "history": "Young Roman martyr; exemplar of purity and courage."},
-  "2025-01-22": {"saint": "St. Vincent, Deacon & Martyr; St. Marianne Cope (USA)", "feast_type": "Optional Memorial", "liturgical_color": "Red", "history": "Vincent of Saragossa martyred; Marianne served lepers in Hawaii."},
-  "2025-01-23": {"saint": "Weekday in Ordinary Time", "feast_type": "Weekday", "liturgical_color": "Green", "history": "Daily fidelity to the Gospel."},
-  "2025-01-24": {"saint": "St. Francis de Sales", "feast_type": "Memorial", "liturgical_color": "White", "history": "Bishop, Doctor; gentle guide to devotion for all states of life."},
-  "2025-01-25": {"saint": "Conversion of St. Paul, Apostle", "feast_type": "Feast", "liturgical_color": "White", "history": "Saul encounters Christ and becomes Apostle to the Gentiles."},
-  "2025-01-26": {"saint": "3rd Sunday in Ordinary Time (Sunday of the Word of God)", "feast_type": "Sunday", "liturgical_color": "Green", "history": "Focus on Scripture as living word for the Church."},
-  "2025-01-27": {"saint": "St. Angela Merici", "feast_type": "Optional Memorial", "liturgical_color": "White", "history": "Founder of the Ursulines; educator of girls."},
-  "2025-01-28": {"saint": "St. Thomas Aquinas, Priest & Doctor", "feast_type": "Memorial", "liturgical_color": "White", "history": "Angelic Doctor; master of theology and Eucharistic devotion."},
-  "2025-01-29": {"saint": "Weekday in Ordinary Time", "feast_type": "Weekday", "liturgical_color": "Green", "history": "Perseverance in ordinary holiness."},
-  "2025-01-30": {"saint": "Weekday in Ordinary Time", "feast_type": "Weekday", "liturgical_color": "Green", "history": "Charity in everyday circumstances."},
-  "2025-01-31": {"saint": "St. John Bosco, Priest", "feast_type": "Memorial", "liturgical_color": "White", "history": "Founder of the Salesians; father and teacher of youth."}
+  "2025-01-01": {
+    "saint": "Solemnity of Mary, Mother of God",
+    "feast_type": "Solemnity",
+    "liturgical_color": "White",
+    "history": "Celebration of Mary’s divine motherhood, highlighting her role in the mystery of salvation."
+  },
+  "2025-01-02": {
+    "saint": "St. Basil the Great and St. Gregory Nazianzen, Bishops and Doctors",
+    "feast_type": "Memorial",
+    "liturgical_color": "White",
+    "history": "Two great Cappadocian Fathers known for defending the Trinity and enriching theology."
+  },
+  "2025-01-03": {
+    "saint": "Most Holy Name of Jesus",
+    "feast_type": "Optional Memorial",
+    "liturgical_color": "White",
+    "history": "Feast honoring the holy name of Jesus, symbol of salvation."
+  },
+  "2025-01-04": {
+    "saint": "St. Elizabeth Ann Seton, Religious",
+    "feast_type": "Memorial",
+    "liturgical_color": "White",
+    "history": "First native-born American saint, founder of the Sisters of Charity."
+  },
+  "2025-01-05": {
+    "saint": "The Epiphany of the Lord",
+    "feast_type": "Solemnity",
+    "liturgical_color": "White",
+    "history": "Celebrates Christ revealed to the nations through the Magi."
+  },
+  "2025-01-06": {
+    "saint": "St. André Bessette, Religious",
+    "feast_type": "Optional Memorial",
+    "liturgical_color": "White",
+    "history": "Canadian brother devoted to St. Joseph, known for miraculous healings."
+  },
+  "2025-01-07": {
+    "saint": "St. Raymond of Peñafort, Priest",
+    "feast_type": "Optional Memorial",
+    "liturgical_color": "White",
+    "history": "Dominican priest, compiler of canon law, model of mercy."
+  },
+  "2025-01-12": {
+    "saint": "Baptism of the Lord",
+    "feast_type": "Feast",
+    "liturgical_color": "White",
+    "history": "Marks the baptism of Jesus in the Jordan and the beginning of His ministry."
+  }
 }
