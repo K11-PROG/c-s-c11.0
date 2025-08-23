@@ -29,8 +29,8 @@
   "2025-01-28": { "saint": "St. Thomas Aquinas", "feast_type": "Memorial", "liturgical_color": "White", "history": "Dominican priest and Doctor of the Church, one of the greatest theologians." },
   "2025-01-29": { "saint": "Weekday in Ordinary Time", "feast_type": "Weekday", "liturgical_color": "Green", "history": "" },
   "2025-01-30": { "saint": "Weekday in Ordinary Time", "feast_type": "Weekday", "liturgical_color": "Green", "history": "" },
-  "2025-01-31": { "saint": "St. John Bosco", "feast_type": "Memorial", "liturgical_color": "White", "history": "Priest, educator, and founder of the Salesians." }
-}
+  "2025-01-31": { "saint": "St. John Bosco", "feast_type": "Memorial", "liturgical_color": "White", "history": "Priest, educator, and founder of the Salesians." },
+
   "2025-08-01": { "saint": "St. Alphonsus Liguori", "feast_type": "Memorial", "liturgical_color": "White", "history": "Bishop and Doctor of the Church, founder of the Redemptorists." },
   "2025-08-02": { "saint": "St. Eusebius of Vercelli; St. Peter Julian Eymard", "feast_type": "Optional Memorial", "liturgical_color": "White", "history": "Eusebius was a bishop and defender of the faith; Eymard founded the Blessed Sacrament Congregation." },
   "2025-08-03": { "saint": "18th Sunday in Ordinary Time", "feast_type": "Sunday", "liturgical_color": "Green", "history": "Ordinary Time continues, focusing on Christ’s ministry." },
