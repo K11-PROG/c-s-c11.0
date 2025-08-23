@@ -3,49 +3,38 @@ import streamlit as st
 from pathlib import Path
 from datetime import datetime
 
-st.set_page_config(page_title="Catholic Saints Calendar 2025", layout="centered")
+st.set_page_config(page_title="Saints Calendar 2025", layout="centered")
 
-# --- Load JSON helper ---
-def load_json(file_path):
-    path = Path(file_path)
-    if path.exists():
-        with open(path, "r", encoding="utf-8") as f:
+def load_json(path):
+    p = Path(path)
+    if p.exists():
+        with p.open("r", encoding="utf-8") as f:
             return json.load(f)
     else:
-        st.error(f"❌ Required file not found: {file_path}")
+        st.error(f"Missing file: {path}")
         st.stop()
 
-# --- Load Data ---
-calendar_data = load_json("data/calendar_2025_en.json")
-meditations_data = load_json("data/meditations_2025_en.json")
+calendar = load_json("data/calendar_2025_en.json")
+meditations = load_json("data/meditations_2025_en.json")
 
-# --- App UI ---
-st.title("📅 Catholic Saints Calendar 2025")
+st.title("Catholic Saints Calendar 2025 (EN)")
 
-# Default to today’s date if available
+# Default date selection
 today = datetime.today().strftime("%Y-%m-%d")
-if today in calendar_data:
-    default_date = today
+default = today if today in calendar else sorted(calendar.keys())[0]
+selected_date = st.selectbox("Select a date", sorted(calendar.keys()), index=sorted(calendar.keys()).index(default))
+
+# Display entry
+entry = calendar.get(selected_date, {})
+st.subheader(f"{selected_date} — {entry.get('saint', 'Unknown')}")
+st.write(f"**Feast Type:** {entry.get('feast_type', '')}")
+st.write(f"**Liturgical Color:** {entry.get('liturgical_color', '')}")
+st.write(f"**History:** {entry.get('history', '')}")
+
+# Meditation
+med = meditations.get(selected_date)
+if med:
+    st.markdown("### 🕊 Meditation")
+    st.write(med)
 else:
-    default_date = sorted(calendar_data.keys())[0]
-
-selected_date = st.selectbox(
-    "Select a date:",
-    options=sorted(calendar_data.keys()),
-    index=sorted(calendar_data.keys()).index(default_date),
-)
-
-# Display calendar entry
-day_info = calendar_data[selected_date]
-
-st.subheader(f"{selected_date} — {day_info.get('saint', 'Unknown')}")
-st.markdown(f"**Feast Type:** {day_info.get('feast_type', 'N/A')}")
-st.markdown(f"**Liturgical Color:** {day_info.get('liturgical_color', 'N/A')}")
-st.markdown(f"**History:** {day_info.get('history', 'No details available.')}")
-
-# Display meditation if exists
-if selected_date in meditations_data:
-    st.markdown("### 🕊️ Meditation")
-    st.write(meditations_data[selected_date])
-else:
-    st.info("No meditation available for this date yet.")
+    st.info("No meditation for this date yet.")
