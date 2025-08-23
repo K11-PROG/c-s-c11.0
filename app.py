@@ -29,14 +29,19 @@ if today in calendar_data:
 else:
     default_date = sorted(calendar_data.keys())[0]
 
-selected_date = st.selectbox("Select a date:", options=sorted(calendar_data.keys()), index=sorted(calendar_data.keys()).index(default_date))
+selected_date = st.selectbox(
+    "Select a date:",
+    options=sorted(calendar_data.keys()),
+    index=sorted(calendar_data.keys()).index(default_date),
+)
 
 # Display calendar entry
 day_info = calendar_data[selected_date]
-st.subheader(f"{selected_date} — {day_info['saint']}")
-st.markdown(f"**Feast Type:** {day_info['feast_type']}")
-st.markdown(f"**Liturgical Color:** {day_info['liturgical_color']}")
-st.markdown(f"**History:** {day_info['history']}")
+
+st.subheader(f"{selected_date} — {day_info.get('saint', 'Unknown')}")
+st.markdown(f"**Feast Type:** {day_info.get('feast_type', 'N/A')}")
+st.markdown(f"**Liturgical Color:** {day_info.get('liturgical_color', 'N/A')}")
+st.markdown(f"**History:** {day_info.get('history', 'No details available.')}")
 
 # Display meditation if exists
 if selected_date in meditations_data:
