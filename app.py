@@ -1,40 +1,51 @@
-import json
 import streamlit as st
-from pathlib import Path
+import json
 from datetime import datetime
 
-st.set_page_config(page_title="Saints Calendar 2025", layout="centered")
-
+# ---- Load JSON safely ----
 def load_json(path):
-    p = Path(path)
-    if p.exists():
-        with p.open("r", encoding="utf-8") as f:
+    try:
+        with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
-    else:
-        st.error(f"Missing file: {path}")
-        st.stop()
+    except FileNotFoundError:
+        st.error(f"File not found: {path}")
+        return {}
+    except json.JSONDecodeError:
+        st.error(f"Error decoding JSON in: {path}")
+        return {}
 
+# ---- Load calendar and meditations ----
 calendar = load_json("data/calendar_2025_en.json")
 meditations = load_json("data/meditations_2025_en.json")
 
-st.title("Catholic Saints Calendar 2025 (EN)")
+st.title("📅 Catholic Saints Calendar (2025)")
+st.write("Daily saints, feast types, liturgical colors, history, and meditations.")
 
-# Default date selection
-today = datetime.today().strftime("%Y-%m-%d")
-default = today if today in calendar else sorted(calendar.keys())[0]
-selected_date = st.selectbox("Select a date", sorted(calendar.keys()), index=sorted(calendar.keys()).index(default))
-
-# Display entry
-entry = calendar.get(selected_date, {})
-st.subheader(f"{selected_date} — {entry.get('saint', 'Unknown')}")
-st.write(f"**Feast Type:** {entry.get('feast_type', '')}")
-st.write(f"**Liturgical Color:** {entry.get('liturgical_color', '')}")
-st.write(f"**History:** {entry.get('history', '')}")
-
-# Meditation
-med = meditations.get(selected_date)
-if med:
-    st.markdown("### 🕊 Meditation")
-    st.write(med)
+# ---- Date selector (show ALL dates from JSON) ----
+all_dates = sorted(calendar.keys())  # ✅ gets every date available
+if not all_dates:
+    st.error("No dates found in calendar JSON.")
 else:
-    st.info("No meditation for this date yet.")
+    today = datetime.today().strftime("%Y-%m-%d")
+    default_date = today if today in all_dates else all_dates[0]
+
+    selected_date = st.selectbox(
+        "Select a date:",
+        all_dates,
+        index=all_dates.index(default_date)
+    )
+
+    # ---- Display calendar info ----
+    if selected_date in calendar:
+        day_info = calendar[selected_date]
+        st.subheader(f"{selected_date} – {day_info.get('saint','Unknown')}")
+        st.markdown(f"**Feast Type:** {day_info.get('feast_type','N/A')}")
+        st.markdown(f"**Liturgical Color:** {day_info.get('liturgical_color','N/A')}")
+        st.markdown(f"**History:** {day_info.get('history','')}")
+
+        # ---- Meditation ----
+        meditation = meditations.get(selected_date, "No meditation available.")
+        st.markdown("### 🕊 Meditation")
+        st.write(meditation)
+    else:
+        st.warning(f"No entry found for {selected_date}")
